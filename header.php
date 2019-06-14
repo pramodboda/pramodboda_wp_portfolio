@@ -20,13 +20,14 @@
     <?php 
         $favicon = IMAGES . '/icons/favicon.ico';
         $touchicon = IMAGES . 'icons/apple-touch-icon-precomposed.png';  
-    
-    
     ?>
 
+    <link rel="shortcut icon" href="<?php echo $favicon;?>">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo $touchicon;?>">
 
     <?php wp_head();?>
 
 
 </head>
-<body>
+<body <?php body_class();?>>
+<!-- Navigation -->

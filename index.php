@@ -30,13 +30,10 @@ get_header();
 		<?php else : ?>
 			<?php get_template_part('content', 'none');?>
 		<?php endif; ?>
+
+		<?php pramodboda_number_pagination();?>
 		</div><!-- end of col-lg-12 -->
 	</div><!--end of row -->
 </div><!--end of container -->
-
-<?php
-get_sidebar();
-get_footer();
-
 
 

@@ -31,7 +31,7 @@
         // pramodboda_post_meta();
         // get_post_meta();
         ?>
-<?php the_content()?>
+<?php the_content(__('Continue Reading', 'pramodboda'))?>
         
     </header>
     

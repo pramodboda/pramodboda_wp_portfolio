@@ -31,12 +31,11 @@ get_header();
 			<?php get_template_part('content', 'none');?>
 		<?php endif; ?>
 
-		<?php pramodboda_number_pagination();?>
+		
 		</div><!-- end of col-lg-12 -->
 	</div><!--end of row -->
 </div><!--end of container -->
 
 
-<?php get_footer(); ?>
 
-
+<?php get_footer();?>

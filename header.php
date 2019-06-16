@@ -19,7 +19,7 @@
 
     <?php 
         $favicon = IMAGES . '/icons/favicon.ico';
-        $touchicon = IMAGES . 'icons/apple-touch-icon-precomposed.png';  
+        $touchicon = IMAGES . '/icons/apple-touch-icon-precomposed.png';  
     ?>
 
     <link rel="shortcut icon" href="<?php echo $favicon;?>">

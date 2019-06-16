@@ -89,7 +89,21 @@ if(!function_exists('pramodboda_number_pagination')){
 /* --------------------------------------------------------------------- */
 if(!function_exists('pramodboda_css_js_scripts')){
     function pramodboda_css_js_scripts(){
-        
+        // Register scripts.
+        wp_register_script('bootstrap-js', THEMEROOT . '/assets/js/bootstrap.min.js', array('jquery'), false, true);
+        wp_register_script('isotope-js', THEMEROOT . '/assets/js/isotope-docs.min.js', false, false, true);
+        wp_register_script('imagesloaded-js', THEMEROOT . '/assets/js/imagesloaded.pkgd.min.js', false, false, true);
+        wp_register_script('main-js', THEMEROOT . '/assets/js/main.js', false, false, true);
+
+        // Load the custum scripts.
+        wp_enqueue_script('bootstrap-js');
+        wp_enqueue_script('isotope-js');
+        wp_enqueue_script('imagesloaded-js');
+        wp_enqueue_script('main-js');
+
+        // Load the stylesheets.
+        wp_enqueue_style('bootsrap-css', THEMEROOT . '/assets/css/bootstrap.min.css');
+        wp_enqueue_style('main-css', THEMEROOT . '/assets/css/style.css');
 
     }
     add_action('wp_enqueue_scripts', 'pramodboda_css_js_scripts');

@@ -37,3 +37,6 @@ get_header();
 </div><!--end of container -->
 
 
+<?php get_footer(); ?>
+
+
